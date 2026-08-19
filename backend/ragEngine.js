@@ -50,8 +50,11 @@ export function retrieveContext(query) {
   return matched.slice(0, 4);
 }
 
-export async function generateRAGAnswer(userQuery) {
+export async function generateRAGAnswer(userQuery, profile = {}) {
   const retrieved = retrieveContext(userQuery);
+  const profileLine = profile?.department
+    ? `The student is in ${profile.year || 'a'} year of ${profile.department}${profile.name ? ` (name: ${profile.name})` : ''}. Personalize when relevant.`
+    : '';
   if (retrieved.length === 0) {
     return {
       answer: "I could not find verified information regarding your query in the GM University knowledge base. Please check with the respective department office.",
@@ -70,10 +73,10 @@ export async function generateRAGAnswer(userQuery) {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({
       model: 'gemini-1.5-flash',
-      systemInstruction: 'You are the official GM University AI Campus Assistant. Use ONLY the supplied Context to answer accurately, concisely, and professionally.'
+      systemInstruction: 'You are the official GM University AI Campus Assistant. Use ONLY the supplied Context to answer accurately, concisely, and professionally. Offer a short next-step recommendation when helpful.'
     });
 
-    const prompt = `Context:\n${contextText}\n\nQuestion: "${userQuery}"\nAnswer:`;
+    const prompt = `${profileLine}\n\nContext:\n${contextText}\n\nQuestion: "${userQuery}"\nAnswer:`;
     const result = await model.generateContent(prompt);
     const response = await result.response;
 

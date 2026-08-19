@@ -16,15 +16,45 @@ app.get('/api/health', (req, res) => {
 
 app.post('/api/chat', async (req, res) => {
   try {
-    const { question } = req.body;
+    const { question, profile } = req.body;
     if (!question || typeof question !== 'string' || !question.trim()) {
       return res.status(400).json({ error: 'A valid question string is required.' });
     }
-    const result = await generateRAGAnswer(question.trim());
+    const result = await generateRAGAnswer(question.trim(), profile);
     res.json(result);
   } catch (error) {
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+app.get('/api/recommendations', (req, res) => {
+  const department = String(req.query.department || '').toLowerCase();
+  const interest = String(req.query.interest || '').toLowerCase();
+  const hay = (item) => JSON.stringify(item).toLowerCase();
+
+  const events = campusKnowledge.events.filter((e) => {
+    const s = hay(e);
+    const matchDept = !department || s.includes(department);
+    const matchInterest = !interest || s.includes(interest);
+    return matchDept && matchInterest;
+  }).slice(0, 4);
+
+  const notices = campusKnowledge.notices.slice(0, 3);
+  const academic = campusKnowledge.academic.filter((a) => {
+    const s = hay(a);
+    return !department || s.includes(department) || s.includes(interest);
+  }).slice(0, 3);
+
+  const services = campusKnowledge.services.slice(0, 3);
+  const faculty = campusKnowledge.faculty.filter((f) => hay(f).includes(department)).slice(0, 3);
+
+  res.json({
+    events: events.length ? events : campusKnowledge.events.slice(0, 3),
+    notices,
+    academic: academic.length ? academic : campusKnowledge.academic.slice(0, 3),
+    services,
+    faculty: faculty.length ? faculty : campusKnowledge.faculty.slice(0, 2)
+  });
 });
 
 app.get('/api/search', (req, res) => {
