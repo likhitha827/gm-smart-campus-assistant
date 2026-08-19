@@ -3,30 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --beige: #e8dcc8;
-  --beige-deep: #d9cbb4;
-  --ink: #3a3228;
-  --ink-soft: #5c5348;
-  --bronze: #8b6914;
-  --clay: #a67c52;
+  --beige: #f4f6f8;       /* Clean cool-grey/white */
+  --beige-deep: #e2e7ec;  /* Soft slate panels */
+  --ink: #0f1e36;         /* Deep Oxford navy */
+  --ink-soft: #3b4d68;    /* Muted steel blue */
+  --bronze: #c5a059;      /* Vintage brass gold */
+  --clay: #7c90a8;        /* Slate blue accent */
 }
 
-html,
-body,
-#root {
-  min-height: 100%;
-}
-
+/* Adjust the body background for maritime compatibility */
 body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(900px 500px at 8% -8%, rgba(255, 248, 235, 0.9), transparent 55%),
-    radial-gradient(700px 420px at 96% 8%, rgba(196, 164, 122, 0.28), transparent 50%),
-    radial-gradient(800px 380px at 50% 108%, rgba(176, 141, 87, 0.18), transparent 46%),
-    linear-gradient(165deg, #f4ead8 0%, #e6d7c0 42%, #dccbb3 100%);
+    radial-gradient(900px 500px at 8% -8%, rgba(255, 255, 255, 0.9), transparent 55%),
+    radial-gradient(700px 420px at 96% 8%, rgba(197, 160, 89, 0.18), transparent 50%),
+    radial-gradient(800px 380px at 50% 108%, rgba(124, 144, 168, 0.15), transparent 46%),
+    linear-gradient(165deg, #f8f9fa 0%, #e9ecf0 42%, #dae1e7 100%);
   font-family: "Segoe UI", "Iowan Old Style", Georgia, system-ui, sans-serif;
 }
+
 
 .film-grain {
   position: fixed;
