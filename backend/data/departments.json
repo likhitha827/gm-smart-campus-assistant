@@ -1,0 +1,25 @@
+[
+  {
+    "id": "dept-cse",
+    "name": "Department of Computer Science & Engineering",
+    "code": "CSE",
+    "hod": "Dr. Ramesh B. Patil",
+    "location": "Block C, 3rd Floor, Room C-301",
+    "contactEmail": "hod.cse@gmuniversity.ac.in",
+    "programs": [
+      "B.Tech CSE",
+      "M.Tech CSE"
+    ]
+  },
+  {
+    "id": "dept-ece",
+    "name": "Department of Electronics & Communication Engineering",
+    "code": "ECE",
+    "hod": "Dr. Anitha V. Rao",
+    "location": "Block B, 2nd Floor, Room B-205",
+    "contactEmail": "hod.ece@gmuniversity.ac.in",
+    "programs": [
+      "B.Tech ECE"
+    ]
+  }
+]

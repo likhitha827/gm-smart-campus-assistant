@@ -1,0 +1,20 @@
+[
+  {
+    "id": "fac-101",
+    "name": "Dr. Ramesh B. Patil",
+    "designation": "Professor & HOD",
+    "department": "Computer Science & Engineering",
+    "email": "ramesh.patil@gmuniversity.ac.in",
+    "office": "Block C, Room C-301",
+    "availableHours": "Mon-Fri: 3:00 PM - 5:00 PM"
+  },
+  {
+    "id": "fac-102",
+    "name": "Dr. Anitha V. Rao",
+    "designation": "Professor & HOD",
+    "department": "Electronics & Communication",
+    "email": "anitha.rao@gmuniversity.ac.in",
+    "office": "Block B, Room B-205",
+    "availableHours": "Mon-Fri: 2:00 PM - 4:00 PM"
+  }
+]

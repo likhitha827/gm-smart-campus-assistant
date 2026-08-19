@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fac-lib",
+    "name": "Central Knowledge Hub (Central Library)",
+    "location": "Academic Complex, 1st & 2nd Floor",
+    "timings": "Mon-Sat: 8:00 AM - 10:00 PM",
+    "contact": "library@gmuniversity.ac.in",
+    "services": [
+      "Book Lending",
+      "Digital IEEE Repository"
+    ]
+  },
+  {
+    "id": "fac-exam",
+    "name": "Controller of Examinations (CoE Office)",
+    "location": "Admin Block, Ground Floor, Room AD-08",
+    "timings": "Mon-Fri: 9:30 AM - 5:00 PM",
+    "contact": "coe@gmuniversity.ac.in",
+    "services": [
+      "Hall Tickets",
+      "Transcripts"
+    ]
+  }
+]
