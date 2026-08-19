@@ -1,0 +1,164 @@
+[
+  {
+    "id": "sub-cse-s1-01",
+    "code": "22MAT11",
+    "name": "Engineering Mathematics I",
+    "department": "CSE",
+    "semester": 1,
+    "instructor": "Dr. Kavya N. Hegde",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s1-02",
+    "code": "22PHY12",
+    "name": "Engineering Physics",
+    "department": "CSE",
+    "semester": 1,
+    "instructor": "Dr. Suresh Kulkarni",
+    "credits": 3
+  },
+  {
+    "id": "sub-cse-s1-03",
+    "code": "22CSE13",
+    "name": "Problem Solving with C",
+    "department": "CSE",
+    "semester": 1,
+    "instructor": "Dr. Ramesh B. Patil",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s2-01",
+    "code": "22MAT21",
+    "name": "Engineering Mathematics II",
+    "department": "CSE",
+    "semester": 2,
+    "instructor": "Dr. Kavya N. Hegde",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s2-02",
+    "code": "22CSE22",
+    "name": "Data Structures",
+    "department": "CSE",
+    "semester": 2,
+    "instructor": "Prof. Meera Joshi",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s2-03",
+    "code": "22CSE23",
+    "name": "Digital Logic Design",
+    "department": "CSE",
+    "semester": 2,
+    "instructor": "Dr. Anitha V. Rao",
+    "credits": 3
+  },
+  {
+    "id": "sub-cse-s3-01",
+    "code": "22CSE31",
+    "name": "Database Management Systems",
+    "department": "CSE",
+    "semester": 3,
+    "instructor": "Prof. Meera Joshi",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s3-02",
+    "code": "22CSE32",
+    "name": "Object Oriented Programming",
+    "department": "CSE",
+    "semester": 3,
+    "instructor": "Dr. Ramesh B. Patil",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s4-01",
+    "code": "22CSE41",
+    "name": "Operating Systems",
+    "department": "CSE",
+    "semester": 4,
+    "instructor": "Dr. Ramesh B. Patil",
+    "credits": 4
+  },
+  {
+    "id": "sub-cse-s4-02",
+    "code": "22CSE42",
+    "name": "Computer Networks",
+    "department": "CSE",
+    "semester": 4,
+    "instructor": "Prof. Arjun Deshpande",
+    "credits": 3
+  },
+  {
+    "id": "sub-ece-s1-01",
+    "code": "22MAT11",
+    "name": "Engineering Mathematics I",
+    "department": "ECE",
+    "semester": 1,
+    "instructor": "Dr. Kavya N. Hegde",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s1-02",
+    "code": "22ECE13",
+    "name": "Basic Electronics",
+    "department": "ECE",
+    "semester": 1,
+    "instructor": "Dr. Anitha V. Rao",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s2-01",
+    "code": "22ECE21",
+    "name": "Network Theory",
+    "department": "ECE",
+    "semester": 2,
+    "instructor": "Prof. Nidhi Sharma",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s2-02",
+    "code": "22ECE22",
+    "name": "Electronic Devices",
+    "department": "ECE",
+    "semester": 2,
+    "instructor": "Dr. Anitha V. Rao",
+    "credits": 3
+  },
+  {
+    "id": "sub-ece-s3-01",
+    "code": "22ECE31",
+    "name": "Analog Circuits",
+    "department": "ECE",
+    "semester": 3,
+    "instructor": "Prof. Nidhi Sharma",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s3-02",
+    "code": "22ECE32",
+    "name": "Signals and Systems",
+    "department": "ECE",
+    "semester": 3,
+    "instructor": "Dr. Suresh Kulkarni",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s4-01",
+    "code": "22ECE41",
+    "name": "Digital Communication",
+    "department": "ECE",
+    "semester": 4,
+    "instructor": "Dr. Anitha V. Rao",
+    "credits": 4
+  },
+  {
+    "id": "sub-ece-s4-02",
+    "code": "22ECE42",
+    "name": "Microcontrollers",
+    "department": "ECE",
+    "semester": 4,
+    "instructor": "Prof. Nidhi Sharma",
+    "credits": 3
+  }
+]
